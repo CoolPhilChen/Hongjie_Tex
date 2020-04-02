@@ -16,6 +16,7 @@
 \usepackage{tikz}
 \usepackage{parskip}
 
+
 % colorful (sub)section title
 \usepackage{xcolor}
 \usepackage{sectsty}
@@ -24,6 +25,7 @@
 %\definecolor{subsectioncolor}{rgb}{1,0.75,0}
 %\sectionfont{\color{sectioncolor}}
 %\subsectionfont{\color{subsectioncolor}}
+
 
 \newtheorem{theorem}{Theorem}
 \newtheorem{definition}{Definition}
@@ -34,6 +36,7 @@
 \newtheorem{proposition}{Proposition}
 \newtheorem{corollary}{Corollary}
 \newtheorem{example}{Example}
+
 
 \newcommand\numberthis{\addtocounter{equation}{1}\tag{\theequation}}
 \newcommand{\argmin}{\mathop{\mathrm{argmin}}\limits} % argmax
@@ -51,20 +54,21 @@
 \newcommand{\mA}{\mathcal{A}}
 \newcommand{\mU}{\mathcal{U}}
 
+\newcommand{\inv}[1]{({#1})^{-1}}
 \newcommand{\dom}{\mathbf{dom}}
 \renewcommand{\ker}{\mathrm{Ker}}
 \newcommand{\img}{\mathrm{Im}}
-\renewcommand{\st}{\mathrm{s.t.}}
 \newcommand{\one}{\mathbbm{1}}
+\renewcommand{\st}{\mathrm{s.t.}}
 \newcommand{\rhs}{\mathrm{R.H.S.}}
 \newcommand{\lhs}{\mathrm{L.H.S.}}
 \newcommand{\opt}{\mathrm{OPT}}
 \newcommand{\lb}{\mathrm{LB}}
 \newcommand{\ub}{\mathrm{UB}}
 \newcommand{\poly}{\mathrm{poly}}
-\newcommand{\for}{~\mathrm{for}~}
-\newcommand{\diag}{\mathrm{diag}}
-\newcommand{\tr}{\mathrm{Tr}}
+\newcommand{\for}{~~\mathrm{for}~~}
+% \renewcommand{\and}{~~\mathrm{and}~~}
+% \def\and{~~\mathrm{and}~~}
 
 
 \newcommand{\todo}{\textcolor{red}{TODO}}
@@ -72,3 +76,59 @@
 \newcommand{\cmt}[1]{\hfill$\triangleright$ {#1}}
 \newcommand{\red}[1]{\textcolor{red}{#1}}
 
+
+% vector
+\newcommand\matzero{\boldsymbol{0}}
+\newcommand\matone{\boldsymbol{1}}
+\def\aa{\boldsymbol{\mathit{a}}}
+\newcommand\bb{\boldsymbol{\mathit{b}}}
+\newcommand\cc{\boldsymbol{\mathit{c}}}
+\newcommand\dd{\boldsymbol{\mathit{d}}}
+\newcommand\ee{\boldsymbol{\mathit{e}}}
+\newcommand\ff{\boldsymbol{\mathit{f}}}
+\renewcommand\gg{\boldsymbol{\mathit{g}}}
+\newcommand\hh{\boldsymbol{\mathit{h}}}
+\newcommand\ii{\boldsymbol{\mathit{i}}}
+\newcommand\jj{\boldsymbol{\mathit{j}}}
+\newcommand\kk{\boldsymbol{\mathit{k}}}
+\renewcommand\ll{\boldsymbol{\mathit{l}}}
+\newcommand\mm{\boldsymbol{\mathit{m}}}
+\newcommand\nn{\boldsymbol{\mathit{n}}}
+\newcommand\oo{\boldsymbol{\mathit{o}}}
+\newcommand\pp{\boldsymbol{\mathit{p}}}
+\newcommand\qq{\boldsymbol{\mathit{q}}}
+\newcommand\rr{\boldsymbol{\mathit{r}}}
+\renewcommand\ss{\boldsymbol{\mathit{s}}}
+\def\tt{\boldsymbol{\mathit{t}}}
+\newcommand\uu{\boldsymbol{\mathit{u}}}
+\newcommand\vv{\boldsymbol{\mathit{v}}}
+\newcommand\ww{\boldsymbol{\mathit{w}}}
+\newcommand\xx{\boldsymbol{\mathit{x}}}
+\newcommand\yy{\boldsymbol{\mathit{y}}}
+\newcommand\zz{\boldsymbol{\mathit{z}}}
+
+
+% matrix
+\newcommand{\diag}{\mathrm{diag}}
+\newcommand{\tr}{\mathrm{Tr}}
+\renewcommand\AA{\boldsymbol{\mathit{A}}}
+\newcommand\BB{\boldsymbol{\mathit{B}}}
+\newcommand\CC{\boldsymbol{\mathit{C}}}
+\newcommand\DD{\boldsymbol{\mathit{D}}}
+\newcommand\EE{\boldsymbol{\mathit{E}}}
+\newcommand\GG{\boldsymbol{\mathit{G}}}
+\newcommand\HH{\boldsymbol{{H}}}
+\newcommand\II{\boldsymbol{\mathit{I}}}
+\newcommand\JJ{\boldsymbol{\mathit{J}}}
+\newcommand\KK{\boldsymbol{\mathit{K}}}
+\newcommand\NN{\boldsymbol{\mathit{N}}}
+\newcommand\MM{\boldsymbol{\mathit{M}}}
+\newcommand\LL{\boldsymbol{\mathit{L}}}
+\newcommand\PP{\boldsymbol{\mathit{P}}}
+\newcommand\RR{\boldsymbol{\mathit{R}}}
+\renewcommand\SS{\boldsymbol{\mathit{S}}}
+\newcommand\UU{\boldsymbol{\mathit{U}}}
+\newcommand\WW{\boldsymbol{\mathit{W}}}
+\newcommand\VV{\boldsymbol{\mathit{V}}}
+\newcommand\XX{\boldsymbol{\mathit{X}}}
+\newcommand\YY{\boldsymbol{\mathit{Y}}}
