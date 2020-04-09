@@ -27,14 +27,17 @@
 %\subsectionfont{\color{subsectioncolor}}
 
 
-\newtheorem{theorem}{Theorem}
-\newtheorem{definition}{Definition}
-\newtheorem{lemma}{Lemma}
-\newtheorem{claim}{Claim}
-\newtheorem{observation}{Observation}
-\newtheorem{remark}{Remark}
-\newtheorem{proposition}{Proposition}
-\newtheorem{corollary}{Corollary}
+\newtheorem{defn}{Definition}[section]
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{coro}{Corollary}[theorem]
+\newtheorem{prop}{Proposition}[section]
+\newtheorem{claim}{Claim}[section]
+\newtheorem{obs}{Observation}[section]
+\newtheorem{fact}{Fact}[section]
+\newtheorem{remark}{Remark}[section]
+
+
 \newtheorem{example}{Example}
 
 
@@ -81,6 +84,7 @@
 %
 \newcommand{\mA}{\mathcal{A}}
 \newcommand{\mO}{\mathcal{O}}
+\newcommand{\mP}{\mathcal{P}}
 \newcommand{\mU}{\mathcal{U}}
 \newcommand{\mX}{\mathcal{X}}
 
