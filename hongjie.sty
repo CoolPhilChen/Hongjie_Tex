@@ -28,23 +28,23 @@
 
 
 \newtheorem{defn}{Definition}[section]
-\newtheorem*{defnu}{Definition}
+\newtheorem*{defn*}{Definition}
 \newtheorem{theorem}{Theorem}[section]
-\newtheorem*{theoremu}{Theorem}
+\newtheorem*{theorem*}{Theorem}
 \newtheorem{lemma}[theorem]{Lemma}
-\newtheorem*{lemmau}{Lemma}
+\newtheorem*{lemma*}{Lemma}
 \newtheorem{coro}{Corollary}[theorem]
-\newtheorem*{corou}{Corollary}
+\newtheorem*{coro*}{Corollary}
 \newtheorem{prop}{Proposition}[section]
-\newtheorem*{propu}{Proposition}
+\newtheorem*{prop*}{Proposition}
 \newtheorem{claim}{Claim}[section]
-\newtheorem*{claimu}{Claim}
+\newtheorem*{claim*}{Claim}
 \newtheorem{obs}{Observation}[section]
-\newtheorem*{obsu}{Observation}
+\newtheorem*{obs*}{Observation}
 \newtheorem{fact}{Fact}[section]
-\newtheorem*{factu}{Fact}
+\newtheorem*{fact*}{Fact}
 \newtheorem{remark}{Remark}[section]
-\newtheorem*{remarku}{Remark}
+\newtheorem*{remark*}{Remark}
 
 
 \newtheorem{example}{Example}
@@ -63,12 +63,15 @@
 
 \newcommand{\pr}{\mathbb{P}}
 \newcommand{\E}{\mathbb{E}}
+\newcommand{\Var}{\mathrm{Var}}
 \newcommand{\Na}{\mathbb{N}}
 \renewcommand{\Re}{\mathbb{R}}
 
 
 \newcommand{\inv}[1]{({#1})^{-1}}
 \newcommand{\dom}{\mathbf{dom}}
+\newcommand{\cov}{\mathrm{cov}}
+\newcommand{\rank}{\mathrm{rank}}
 \renewcommand{\ker}{\mathrm{Ker}}
 \newcommand{\img}{\mathrm{Im}}
 \newcommand{\one}{\mathbbm{1}}
@@ -84,7 +87,8 @@
 \newcommand{\huo}{~~\mathrm{or}~~}
 
 
-\newcommand{\todo}{\textcolor{red}{TODO}}
+% \newcommand{\todo}{\textcolor{red}{TODO}}
+\newcommand{\todo}[1]{\textcolor{red}{TODO: {#1}}}
 \newcommand{\maybe}{\textcolor{cyan}{Maybe}}
 \newcommand{\cmt}[1]{\hfill$\triangleright$ {#1}}
 \newcommand{\red}[1]{\textcolor{red}{#1}}
@@ -92,8 +96,10 @@
 
 %
 \newcommand{\mA}{\mathcal{A}}
+\newcommand{\mN}{\mathcal{N}}
 \newcommand{\mO}{\mathcal{O}}
 \newcommand{\mP}{\mathcal{P}}
+\newcommand{\mS}{\mathcal{S}}
 \newcommand{\mU}{\mathcal{U}}
 \newcommand{\mX}{\mathcal{X}}
 
