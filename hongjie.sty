@@ -71,9 +71,12 @@
 \newcommand{\inv}[1]{({#1})^{-1}}
 \newcommand{\dom}{\mathbf{dom}}
 \newcommand{\cov}{\mathrm{cov}}
-\newcommand{\rank}{\mathrm{rank}}
-\renewcommand{\ker}{\mathrm{Ker}}
-\newcommand{\img}{\mathrm{Im}}
+\newcommand{\rank}[1]{\mathrm{rank}\left(#1\right)}
+\renewcommand{\ker}[1]{\mathrm{Ker}\left(#1\right)}
+\newcommand{\img}[1]{\mathrm{Im}\left(#1\right)}
+\newcommand{\col}[1]{\mathrm{Col}\left(#1\right)}
+\newcommand{\row}[1]{\mathrm{Row}\left(#1\right)}
+\newcommand{\GL}{\mathrm{GL}}
 \newcommand{\one}{\mathbbm{1}}
 \renewcommand{\st}{\mathrm{s.t.}}
 \newcommand{\rhs}{\mathrm{R.H.S.}}
@@ -90,8 +93,9 @@
 % \newcommand{\todo}{\textcolor{red}{TODO}}
 \newcommand{\todo}[1]{\textcolor{red}{TODO: {#1}}}
 \newcommand{\maybe}{\textcolor{cyan}{Maybe}}
-\newcommand{\cmt}[1]{\hfill$\triangleright$ {#1}}
+% \newcommand{\cmt}[1]{\hfill$\triangleright$ {#1}}
 \newcommand{\red}[1]{\textcolor{red}{#1}}
+\newcommand{\cmt}[1]{\textcolor{red}{\textbf{Comment}: #1}}
 
 
 %
@@ -151,7 +155,9 @@
 \newcommand\NN{\boldsymbol{\mathit{N}}}
 \newcommand\MM{\boldsymbol{\mathit{M}}}
 \newcommand\LL{\boldsymbol{\mathit{L}}}
+\newcommand\OO{\boldsymbol{\mathit{O}}}
 \newcommand\PP{\boldsymbol{\mathit{P}}}
+\newcommand\QQ{\boldsymbol{\mathit{Q}}}
 \newcommand\RR{\boldsymbol{\mathit{R}}}
 \renewcommand\SS{\boldsymbol{\mathit{S}}}
 \newcommand\UU{\boldsymbol{\mathit{U}}}
@@ -159,3 +165,4 @@
 \newcommand\VV{\boldsymbol{\mathit{V}}}
 \newcommand\XX{\boldsymbol{\mathit{X}}}
 \newcommand\YY{\boldsymbol{\mathit{Y}}}
+\newcommand\ZZ{\boldsymbol{\mathit{Z}}}
