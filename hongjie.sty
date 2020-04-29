@@ -68,6 +68,7 @@
 \renewcommand{\Re}{\mathbb{R}}
 
 
+\def\norm#1{\left\| #1 \right\|}
 \newcommand{\inv}[1]{({#1})^{-1}}
 \newcommand{\dom}{\mathbf{dom}}
 \newcommand{\cov}{\mathrm{cov}}
@@ -140,8 +141,8 @@
 
 
 % matrix
-\newcommand{\diag}{\mathrm{diag}}
-\newcommand{\tr}{\mathrm{Tr}}
+\newcommand{\diag}[1]{\mathrm{diag}\left\{#1\right\}}
+\newcommand{\tr}[1]{\mathrm{Tr}\left(#1\right)}
 \renewcommand\AA{\boldsymbol{\mathit{A}}}
 \newcommand\BB{\boldsymbol{\mathit{B}}}
 \newcommand\CC{\boldsymbol{\mathit{C}}}
