@@ -20,6 +20,8 @@
 % \usepackage{algorithmic}
 % options for algorithm2e: linesnumbered, boxed, vlined, ruled...
 \usepackage[boxed, vlined, ruled]{algorithm2e}
+\SetKwInOut{KwIn}{Input}
+\SetKwInOut{KwOut}{Output}
 \SetKwInput{kwInit}{Init}
 \SetKwInput{kwAss}{Assumption}
 
@@ -57,14 +59,13 @@
 
 
 \newcommand\numberthis{\addtocounter{equation}{1}\tag{\theequation}}
-\newcommand{\argmin}{\mathop{\mathrm{argmin}}\limits} % argmax
-\newcommand{\argmax}{\mathop{\mathrm{argmax}}\limits} % argmin
+\newcommand{\argmin}{\mathop{\mathrm{argmin}}} % argmin
+\newcommand{\argmax}{\mathop{\mathrm{argmax}}} % argmax
 \newcommand{\Max}{\max\limits}
 \newcommand{\ap}{\alpha}
 \newcommand{\bt}{\beta}
 \newcommand{\ep}{\varepsilon}
 \newcommand{\sm}{\setminus}
-\newcommand{\T}{\top}
 
 
 % prob & stats
@@ -82,12 +83,13 @@
 
 
 % 
-\newcommand\intr{\boldsymbol{\mathrm{int}}} % interior
-\newcommand\cl{\boldsymbol{\mathrm{cl}}} % clousre
-\newcommand\bd{\boldsymbol{\mathrm{bd}}} % boundary
+\newcommand{\intr}[1]{\boldsymbol{\mathrm{int}}\left(#1\right)} % interior
+\newcommand{\cl}[1]{\boldsymbol{\mathrm{cl}}\left(#1\right)} % clousre
+\newcommand{\bd}[1]{\boldsymbol{\mathrm{bd}}\left(#1\right)} % boundary
 
 
 % Linear Algebra
+\newcommand{\T}{\top}
 \renewcommand{\det}[1]{\mathrm{det}\left(#1\right)}
 \newcommand{\rank}[1]{\mathrm{rank}\left(#1\right)}
 \renewcommand{\ker}[1]{\mathrm{Ker}\left(#1\right)}
