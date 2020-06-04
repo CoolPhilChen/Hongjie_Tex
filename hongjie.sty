@@ -53,43 +53,52 @@
 \newtheorem*{fact*}{Fact}
 \newtheorem{remark}{Remark}[section]
 \newtheorem*{remark*}{Remark}
-
-
 \newtheorem{example}{Example}
+\newtheorem*{example*}{Example}
 
 
 \newcommand\numberthis{\addtocounter{equation}{1}\tag{\theequation}}
+
 \newcommand{\argmin}{\mathop{\mathrm{argmin}}} % argmin
 \newcommand{\argmax}{\mathop{\mathrm{argmax}}} % argmax
 \newcommand{\Max}{\max\limits}
+
 \newcommand{\ap}{\alpha}
 \newcommand{\bt}{\beta}
 \newcommand{\ep}{\varepsilon}
-\newcommand{\sm}{\setminus}
+
+\newcommand{\rec}[1]{\frac{1}{#1}}
 
 
 % prob & stats
 \newcommand{\pr}{\mathbb{P}}
+\newcommand{\prob}[1]{\mathrm{Pr}\left(#1\right)}
 \newcommand{\E}{\mathbb{E}}
-\newcommand{\Var}{\mathrm{Var}}
+\newcommand{\expect}[1]{\mathbb{E}\left[#1\right]}
+\newcommand{\Var}[1]{\mathrm{Var}\left(#1\right)}
 \newcommand{\Ber}{\mathrm{Ber}}
+\newcommand{\cov}[1]{\mathrm{Cov}\left(#1\right)}
 
 
-% number systems
+% set systems
 \newcommand{\Na}{\mathbb{N}}
 \newcommand{\Z}{\mathbb{Z}}
 \renewcommand{\Re}{\mathbb{R}}
 \newcommand{\C}{\mathbb{C}}
+\newcommand{\supp}[1]{\mathrm{supp}\left\{#1\right\}} % support set
+\newcommand{\sm}{\setminus}
 
 
-% 
+% topology
 \newcommand{\intr}[1]{\boldsymbol{\mathrm{int}}\left(#1\right)} % interior
 \newcommand{\cl}[1]{\boldsymbol{\mathrm{cl}}\left(#1\right)} % clousre
 \newcommand{\bd}[1]{\boldsymbol{\mathrm{bd}}\left(#1\right)} % boundary
 
 
+
 % Linear Algebra
-\newcommand{\T}{\top}
+\newcommand{\T}{\top} % transpose
+\newcommand{\trp}[1]{{#1}^{\T}}
 \renewcommand{\det}[1]{\mathrm{det}\left(#1\right)}
 \newcommand{\rank}[1]{\mathrm{rank}\left(#1\right)}
 \renewcommand{\ker}[1]{\mathrm{Ker}\left(#1\right)}
@@ -97,15 +106,17 @@
 \newcommand{\col}[1]{\mathrm{Col}\left(#1\right)}
 \newcommand{\row}[1]{\mathrm{Row}\left(#1\right)}
 \newcommand{\spa}[1]{\mathrm{Span}\left\{#1\right\}}
-
-
-\def\norm#1{\left\| #1 \right\|}
-\newcommand{\inv}[1]{({#1})^{-1}}
-\newcommand{\dom}{\mathbf{dom}}
-\newcommand{\cov}{\mathrm{cov}}
+\newcommand{\inv}[1]{\left(#1\right)^{-1}}
+\newcommand{\norm}[1]{\left\|#1\right\|}
+\newcommand{\inner}[2]{\left\langle#1,#2\right\rangle}
+\newcommand{\abs}[1]{\left|#1\right|}
 \newcommand{\GL}{\mathrm{GL}}
+
+
+
+\newcommand{\dom}{\mathbf{dom}}
 \newcommand{\one}{\mathbbm{1}}
-\renewcommand{\st}{\mathrm{s.t.}}
+\renewcommand{\st}{~\mathrm{s.t.}~}
 \newcommand{\ow}{\mathrm{o.w.}}
 \renewcommand{\ae}{\mathrm{a.e.}}
 \newcommand{\df}{\mathrm{d}}
@@ -119,7 +130,6 @@
 \newcommand{\poly}{\mathrm{poly}}
 \newcommand{\for}{~\mathrm{for}~}
 \newcommand{\forany}{~\text{for any}~}
-% \newcommand{\foreach}{~\text{for each}~}
 \newcommand{\he}{~\mathrm{and}~}
 \newcommand{\huo}{~\mathrm{or}~}
 \newcommand{\ruo}{~\mathrm{if}~}
@@ -133,7 +143,7 @@
 \newcommand{\cmt}[1]{\textcolor{red}{\textbf{Comment}: #1}}
 
 
-%
+% mathcal
 \newcommand{\mA}{\mathcal{A}}
 \newcommand{\mD}{\mathcal{D}}
 \newcommand{\mF}{\mathcal{F}}
@@ -148,8 +158,11 @@
 
 % asymptotic notions
 \newcommand{\asUB}[1]{\mO\left(#1\right)}
+\newcommand{\asyUB}[1]{\mO\left(#1\right)}
 \newcommand{\astUB}[1]{\tilde{\mathcal{O}}\left(#1\right)}
+\newcommand{\asyUBt}[1]{\tilde{\mathcal{O}}\left(#1\right)}
 \newcommand{\asLB}[1]{\Omega\left(#1\right)}
+\newcommand{\asyLB}[1]{\Omega\left(#1\right)}
 
 % vector
 \newcommand\matzero{\boldsymbol{0}}
@@ -180,6 +193,8 @@
 \newcommand\xx{\boldsymbol{\mathit{x}}}
 \newcommand\yy{\boldsymbol{\mathit{y}}}
 \newcommand\zz{\boldsymbol{\mathit{z}}}
+
+\newcommand\aap{\boldsymbol{\mathit{\ap}}}
 \newcommand\bbt{\boldsymbol{\mathit{\bt}}}
 \newcommand\llambda{\boldsymbol{\mathit{\lambda}}}
 \newcommand\mmu{\boldsymbol{\mathit{\mu}}}
