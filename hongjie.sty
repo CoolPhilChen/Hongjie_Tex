@@ -82,16 +82,19 @@
 \newcommand{\Var}[1]{\mathrm{Var}\left(#1\right)}
 \newcommand{\Ber}{\mathrm{Ber}}
 \newcommand{\cov}[1]{\mathrm{Cov}\left(#1\right)}
+\newcommand{\iid}{\stackrel{\mathrm{iid}}{\sim}}
 
 
 % set systems
+\newcommand{\set}[1]{\left\{#1\right\}}
 \newcommand{\Na}{\mathbb{N}}
 \newcommand{\Z}{\mathbb{Z}}
 \renewcommand{\Re}{\mathbb{R}}
 \newcommand{\C}{\mathbb{C}}
 \newcommand{\supp}[1]{\mathrm{supp}\left\{#1\right\}} % support set
 \newcommand{\sm}{\setminus}
-\newcommand{\sqmat}[1]{\Re^{#1 \times #1}} % set of square matrices
+\newcommand{\rmat}[2]{\Re^{#1 \times #2}} % set of rectangular matrices
+\newcommand{\sqmat}[1]{\rmat{#1}{#1}} % set of square matrices
 \newcommand{\psd}[1]{S^{#1}_{+}} % set of PSD matrices
 \newcommand{\pd}[1]{S^{#1}_{++}} % set of PD matrices
 
@@ -112,12 +115,13 @@
 \newcommand{\img}[1]{\mathrm{Im}\left(#1\right)}
 \newcommand{\col}[1]{\mathrm{Col}\left(#1\right)}
 \newcommand{\row}[1]{\mathrm{Row}\left(#1\right)}
-\newcommand{\spa}[1]{\mathrm{Span}\left\{#1\right\}}
+\newcommand{\spa}[1]{\mathrm{span}\left\{#1\right\}}
 \newcommand{\inv}[1]{\left(#1\right)^{-1}}
 \newcommand{\norm}[1]{\left\|#1\right\|}
 \newcommand{\inner}[2]{\left\langle#1,#2\right\rangle}
 \newcommand{\abs}[1]{\left|#1\right|}
-\newcommand{\GL}[1]{\mathrm{GL}\left(#1\right)} % general linear group
+% \newcommand{\GL}[1]{\mathrm{GL}\left(#1\right)} % general linear group
+\newcommand{\GL}{\mathrm{GL}} % general linear group
 
 
 
@@ -140,6 +144,7 @@
 \newcommand{\he}{~\mathrm{and}~}
 \newcommand{\huo}{~\mathrm{or}~}
 \newcommand{\ruo}{~\mathrm{if}~}
+\newcommand{\where}{~\mathrm{where}~}
 
 
 % \newcommand{\todo}{\textcolor{red}{TODO}}
@@ -205,6 +210,8 @@
 \newcommand\bbt{\boldsymbol{\mathit{\bt}}}
 \newcommand\llambda{\boldsymbol{\mathit{\lambda}}}
 \newcommand\mmu{\boldsymbol{\mathit{\mu}}}
+\newcommand\ppi{\boldsymbol{\mathit{\pi}}}
+\newcommand\ttheta{\boldsymbol{\mathit{\theta}}}
 
 
 % matrix
@@ -235,4 +242,8 @@
 \newcommand\XX{\boldsymbol{\mathit{X}}}
 \newcommand\YY{\boldsymbol{\mathit{Y}}}
 \newcommand\ZZ{\boldsymbol{\mathit{Z}}}
+
+\newcommand\DDelta{\boldsymbol{\mathit{\Delta}}}
 \newcommand\SSigma{\boldsymbol{\mathit{\Sigma}}}
+\newcommand\LLambda{\boldsymbol{\mathit{\Lambda}}}
+\newcommand\TTheta{\boldsymbol{\mathit{\Theta}}}
